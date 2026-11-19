@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk | Glowiee Beauty</title>
+    <link rel="stylesheet" href="margin.css">
+
+    <style>
+        body { font-family: Arial, sans-serif; font-size: 16px; line-height: 24px; color: #333333; background-color: #fff5f7; }
+        a { text-decoration: none; }
+        .container { width: 960px; overflow: auto; box-sizing: border-box; }
+        header { background-color: #d6336c; color: white; overflow: auto; }
+        header .logo { float: left; font-size: 28px; font-weight: bold; letter-spacing: 2px; }
+        header .logo small { display: block; font-size: 12px; font-weight: normal; letter-spacing: 0; }
+        nav { float: right; }
+        nav a { float: left; color: white; font-weight: bold; padding: 10px 18px; border-radius: 4px; }
+        nav a.aktif { background-color: #a61e4d; }
+        .hero { background-color: #ffe0e9; text-align: center; border-bottom: 4px solid #d6336c; }
+        .hero h1 { font-size: 38px; color: #a61e4d; }
+        .hero p { font-size: 18px; }
+        .tombol { display: inline-block; background-color: #d6336c; color: white; font-weight: bold; padding: 10px 24px; border-radius: 20px; border: none; font-size: 16px; cursor: pointer; }
+        h2 { color: #a61e4d; border-bottom: 2px dashed #f06595; padding-bottom: 5px; }
+        h3 { color: #d6336c; }
+        .card { width: 32%; float: left; background-color: white; border: 1px solid #f3b6c9; border-radius: 8px; padding: 15px; position: relative; box-sizing: border-box; height: 430px; }
+        .card .foto { height: 150px; background-color: #ffe0e9; border-radius: 6px; overflow: hidden; }
+        .card .foto img { width: 100%; height: 150px; object-fit: cover; display: block; }
+        .card .harga { color: #d6336c; font-weight: bold; font-size: 18px; }
+        .card .label { position: absolute; top: 8px; right: 8px; background-color: #d6336c; color: white; font-size: 12px; padding: 2px 8px; border-radius: 10px; }
+        .kolom2 { width: 48%; float: left; box-sizing: border-box; }
+        .kotak { background-color: white; border: 1px solid #f3b6c9; border-radius: 8px; padding: 15px; }
+        table { width: 100%; border-collapse: collapse; background-color: white; }
+        th { background-color: #d6336c; color: white; }
+        th, td { border: 1px solid #f3b6c9; padding: 8px; text-align: left; }
+        tfoot td { background-color: #ffe0e9; font-style: italic; }
+        caption { font-weight: bold; color: #a61e4d; text-align: left; padding-bottom: 5px; }
+        form label { font-weight: bold; }
+        .isian { box-sizing: border-box; width: 100%; padding: 8px; border: 1px solid #f06595; border-radius: 4px; font-size: 15px; }
+        footer { background-color: #a61e4d; color: white; text-align: center; font-size: 14px; }
+        .clear { clear: both; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-isi">
+            <div class="logo">GLOWIEE<small>Makeup &amp; Skincare Store</small></div>
+            <nav>
+                <a href="index.html">Beranda</a>
+                <a href="produk.html" class="aktif">Produk</a>
+                <a href="tips.html">Tips &amp; Tentang</a>
+                <a href="pesan.html">Pesan Sekarang</a>
+            </nav>
+        </div>
+    </header>
+
+    <div>
+        <div class="container isi">
+            <h1>Katalog Produk</h1>
+            <p>Loncat ke bagian: <a href="#makeup">Makeup</a> | <a href="#skincare">Skincare</a> | <a href="#daftarharga">Daftar Harga</a></p>
+        </div>
+    </div>
+
+    <div>
+        <div class="container isi">
+            <h2><a name="makeup"></a>Makeup</h2>
+            <div class="card">
+                
+                <div class="foto"><img src="gambar/lipstick dior.jpg" alt="Mate Lipstick Dior"></div>
+                <h3>Mate Lipstick Dior</h3>
+                <p>Warna yang memukau dan lembut menambahkan kesan elegan dan tahan lama.</p>
+                <p class="harga">Rp 700.000</p>
+                <a href="pesan.html" class="tombol">Beli</a>
+            </div>
+            <div class="card">
+                <span class="label">Baru</span>
+                <div class="foto"><img src="gambar/ysl lipstick.jpg" alt="Lips YSL Pretty"></div>
+                <h3>Lips YSL Pretty</h3>
+                <p>Warna rose, tahan lama dan ringan di bibir. 4 gram.</p>
+                <p class="harga">Rp 500.000</p>
+                <a href="pesan.html" class="tombol">Beli</a>
+            </div>
+            <div class="card">
+                
+                <div class="foto"><img src="gambar/setting spray sea make up.jpg" alt="Setting Spray Sea Makeup"></div>
+                <h3>Setting Spray Sea Makeup</h3>
+                <p>Kulit dapat tampak lebih halus dan awet. 100 ml.</p>
+                <p class="harga">Rp 49.000</p>
+                <a href="pesan.html" class="tombol">Beli</a>
+            </div>
+            <div class="card">
+                <span class="label">Diskon 15%</span>
+                <div class="foto"><img src="gambar/eye shadow esqa.jpg" alt="Eyeshadow Palette 9 Warna"></div>
+                <h3>Eyeshadow ESQA Palette 9 Warna</h3>
+                <p>Warna earth tone untuk makeup harian dan acara kampus.</p>
+                <p class="harga">Rp 129.000</p>
+                <a href="pesan.html" class="tombol">Beli</a>
+            </div>
+            <div class="card">
+                
+                <div class="foto"><img src="gambar/Rare beauty blush.jpg" alt="Blush On Peach"></div>
+                <h3>Blush On Peach Rare Beauty</h3>
+                <p>Memberi rona segar alami pada pipi. 6 gram.</p>
+                <p class="harga">Rp 80.000</p>
+                <a href="pesan.html" class="tombol">Beli</a>
+            </div>
+            <div class="card">
+                
+                <div class="foto"><img src="gambar/ysl brownzer.jpg" alt="YSL Brownzer"></div>
+                <h3>YSL Brownzer</h3>
+                <p>Dapat membuat countur wajah lebih tajam dan tahan lama.</p>
+                <p class="harga">Rp 200.000</p>
+                <a href="pesan.html" class="tombol">Beli</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container isi">
+            <h2><a name="skincare"></a>Skincare</h2>
+            <div class="card">
+                
+                <div class="foto"><img src="gambar/facialwash centella.jpg" alt="Facial Wash Brightening"></div>
+                <h3>Facial Wash Brightening centella</h3>
+                <p>Membersihkan tanpa membuat kulit kering. 100 ml.</p>
+                <p class="harga">Rp 50.000</p>
+                <a href="pesan.html" class="tombol">Beli</a>
+            </div>
+            <div class="card">
+                
+                <div class="foto"><img src="gambar/set skincase centella.jpg" alt="Set Skincare Brightening Centella"></div>
+                <h3>Set Skincare Brightening Centella</h3>
+                <p>Melembapkan dan menyiapkan kulit sebelum serum. 150 ml.</p>
+                <p class="harga">Rp 300.000</p>
+                <a href="pesan.html" class="tombol">Beli</a>
+            </div>
+            <div class="card">
+                <span class="label">Terlaris</span>
+                <div class="foto"><img src="gambar/serum centela.jpg" alt="Serum Vitamin C 15%"></div>
+                <h3>Serum Vitamin C 15%</h3>
+                <p>Mencerahkan dan menyamarkan noda hitam. 20 ml.</p>
+                <p class="harga">Rp 89.000</p>
+                <a href="pesan.html" class="tombol">Beli</a>
+            </div>
+            <div class="card">
+                
+                <div class="foto"><img src="gambar/Glad2Glow Moisturizer.jpg" alt="Moisturizer Ceramide"></div>
+                <h3>Moisturizer Ceramide</h3>
+                <p>Menjaga skin barrier, cocok untuk kulit sensitif. 50 gram.</p>
+                <p class="harga">Rp 68.000</p>
+                <a href="pesan.html" class="tombol">Beli</a>
+            </div>
+            <div class="card">
+                <span class="label">Diskon 10%</span>
+                <div class="foto"><img src="gambar/sunscreen skintifik.jpg" alt="Sunscreen Gel SPF 50"></div>
+                <h3>Sunscreen Gel SPF 50</h3>
+                <p>Ringan dan tidak berminyak. 50 ml.</p>
+                <p class="harga">Rp 75.000</p>
+                <a href="pesan.html" class="tombol">Beli</a>
+            </div>
+            <div class="card">
+                
+                <div class="foto"><img src="gambar/masker aloevera.jpg" alt="Sheet Mask Aloe (5 pcs)"></div>
+                <h3>Sheet Mask Aloe (5 pcs)</h3>
+                <p>Menenangkan kulit yang kemerahan. 1 box isi 5 lembar.</p>
+                <p class="harga">Rp 35.000</p>
+                <a href="pesan.html" class="tombol">Beli</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container isi">
+            <h2><a name="daftarharga"></a>Daftar Harga Lengkap</h2>
+            <table>
+                <caption>Daftar harga produk Glowiee Beauty (per November 2026)</caption>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Produk</th>
+                        <th>Kategori</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Mate Lipstick Dior</td><td rowspan="6">Makeup</td><td>Rp 700.000</td></tr>
+                    <tr><td>2</td><td>Lips YSL Pretty</td><td>Rp 500.000</td></tr>
+                    <tr><td>3</td><td>Setting Spray Sea Makeup</td><td>Rp 49.000</td></tr>
+                    <tr><td>4</td><td>Eyeshadow ESQA Palette 9 Warna</td><td>Rp 129.000</td></tr>
+                    <tr><td>5</td><td>Blush On Peach Rare Beauty</td><td>Rp 80.000</td></tr>
+                    <tr><td>6</td><td>YSL Brownzer</td><td>Rp 200.000</td></tr>
+                    <tr><td>7</td><td>Facial Wash Brightening centella</td><td rowspan="6">Skincare</td><td>Rp 50.000</td></tr>
+                    <tr><td>8</td><td>Set Skincare Brightening Centella</td><td>Rp 300.000</td></tr>
+                    <tr><td>9</td><td>Serum Vitamin C 15%</td><td>Rp 89.000</td></tr>
+                    <tr><td>10</td><td>Moisturizer Ceramide</td><td>Rp 68.000</td></tr>
+                    <tr><td>11</td><td>Sunscreen Gel SPF 50</td><td>Rp 75.000</td></tr>
+                    <tr><td>12</td><td>Sheet Mask Aloe (5 pcs)</td><td>Rp 35.000</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr><td colspan="4">Harga dapat berubah sewaktu-waktu. Pesan lewat halaman <a href="pesan.html">Pesan Sekarang</a>.</td></tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-isi">
+            <p>&copy; 2026 Glowiee Beauty - Toko Online Makeup &amp; Skincare, Malang<br>
+            WhatsApp: 0812-3456-7890 | Email: <a href="mailto:halo@glowiee.id" style="color:white;">halo@glowiee.id</a></p>
+        </div>
+    </footer>
+</body>
+</html>

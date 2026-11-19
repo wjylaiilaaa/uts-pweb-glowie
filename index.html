@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | Glowiee Beauty</title>
+    <link rel="stylesheet" href="margin.css">
+
+    <style>
+        body { font-family: Arial, sans-serif; font-size: 16px; line-height: 24px; color: #333333; background-color: #fff5f7; }
+        a { text-decoration: none; }
+        .container { width: 960px; overflow: auto; box-sizing: border-box; }
+        header { background-color: #d6336c; color: white; overflow: auto; }
+        header .logo { float: left; font-size: 28px; font-weight: bold; letter-spacing: 2px; }
+        header .logo small { display: block; font-size: 12px; font-weight: normal; letter-spacing: 0; }
+        nav { float: right; }
+        nav a { float: left; color: white; font-weight: bold; padding: 10px 18px; border-radius: 4px; }
+        nav a.aktif { background-color: #a61e4d; }
+        .hero { background-color: #ffe0e9; text-align: center; border-bottom: 4px solid #d6336c; }
+        .hero h1 { font-size: 38px; color: #a61e4d; }
+        .hero p { font-size: 18px; }
+        .tombol { display: inline-block; background-color: #d6336c; color: white; font-weight: bold; padding: 10px 24px; border-radius: 20px; border: none; font-size: 16px; cursor: pointer; }
+        h2 { color: #a61e4d; border-bottom: 2px dashed #f06595; padding-bottom: 5px; }
+        h3 { color: #d6336c; }
+        .card { width: 32%; float: left; background-color: white; border: 1px solid #f3b6c9; border-radius: 8px; padding: 15px; position: relative; box-sizing: border-box; height: 430px; }
+        .card .foto { height: 150px; background-color: #ffe0e9; border-radius: 6px; overflow: hidden; }
+        .card .foto img { width: 100%; height: 150px; object-fit: cover; display: block; }
+        .card .harga { color: #d6336c; font-weight: bold; font-size: 18px; }
+        .card .label { position: absolute; top: 8px; right: 8px; background-color: #d6336c; color: white; font-size: 12px; padding: 2px 8px; border-radius: 10px; }
+        .kolom2 { width: 48%; float: left; box-sizing: border-box; }
+        .kotak { background-color: white; border: 1px solid #f3b6c9; border-radius: 8px; padding: 15px; }
+        table { width: 100%; border-collapse: collapse; background-color: white; }
+        th { background-color: #d6336c; color: white; }
+        th, td { border: 1px solid #f3b6c9; padding: 8px; text-align: left; }
+        tfoot td { background-color: #ffe0e9; font-style: italic; }
+        caption { font-weight: bold; color: #a61e4d; text-align: left; padding-bottom: 5px; }
+        form label { font-weight: bold; }
+        .isian { box-sizing: border-box; width: 100%; padding: 8px; border: 1px solid #f06595; border-radius: 4px; font-size: 15px; }
+        footer { background-color: #a61e4d; color: white; text-align: center; font-size: 14px; }
+        .clear { clear: both; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-isi">
+            <div class="logo">GLOWIEE<small>Makeup &amp; Skincare Store</small></div>
+            <nav>
+                <a href="index.html" class="aktif">Beranda</a>
+                <a href="produk.html">Produk</a>
+                <a href="tips.html">Tips &amp; Tentang</a>
+                <a href="pesan.html">Pesan Sekarang</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="container hero-isi">
+            <h1>Kulit Sehat, Wajah Percaya Diri</h1>
+            <p>Glowiee Beauty menjual makeup dan skincare original dengan harga terjangkau untuk mahasiswa dan pekerja muda.<br>
+            Gratis ongkir untuk pembelian di atas Rp 150.000.</p>
+            <a href="produk.html" class="tombol">Lihat Semua Produk</a>
+        </div>
+    </div>
+
+    <div>
+        <div class="container isi">
+            <h2>Kategori Produk</h2>
+            <div class="kolom2">
+                <div class="kotak">
+                    <h3>&#128132; Makeup</h3>
+                    <p>Lipstik, cushion, maskara, dan eyeshadow dengan warna yang cocok untuk kulit sawo matang khas Indonesia.</p>
+                    <a href="produk.html#makeup">Lihat makeup &raquo;</a>
+                </div>
+            </div>
+            <div class="kolom2 kolom-kanan">
+                <div class="kotak">
+                    <h3>&#127807; Skincare</h3>
+                    <p>Facial wash, toner, serum, pelembap, dan sunscreen untuk perawatan kulit harian.</p>
+                    <a href="produk.html#skincare">Lihat skincare &raquo;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container isi">
+            <h2>Produk Terlaris</h2>
+            <div class="card">
+                <span class="label">Terlaris</span>
+                <div class="foto"><img src="gambar/serum.jpg" alt="Serum Vitamin C 15%"></div>
+                <h3>Serum Vitamin C 15%</h3>
+                <p>Mencerahkan dan membantu menyamarkan noda hitam. 20 ml.</p>
+                <p class="harga">Rp 89.000</p>
+                <a href="pesan.html" class="tombol">Beli</a>
+            </div>
+            <div class="card">
+                <span class="label">Baru</span>
+                <div class="foto"><img src="gambar/lip-cream.jpg" alt="Matte Lip Cream Rose"></div>
+                <h3>Matte Lip Cream Rose</h3>
+                <p>Lipstik tahan 8 jam, tidak lengket, warna rose natural. 4 gram.</p>
+                <p class="harga">Rp 59.000</p>
+                <a href="pesan.html" class="tombol">Beli</a>
+            </div>
+            <div class="card">
+                <span class="label">Diskon 10%</span>
+                <div class="foto"><img src="gambar/sunscreen.jpg" alt="Sunscreen Gel SPF 50"></div>
+                <h3>Sunscreen Gel SPF 50</h3>
+                <p>Ringan, tidak berminyak, cocok dipakai sebelum kuliah. 50 ml.</p>
+                <p class="harga">Rp 75.000</p>
+                <a href="pesan.html" class="tombol">Beli</a>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container isi">
+            <h2>Kenapa Belanja di Glowiee?</h2>
+            <ul>
+                <li>Semua produk original dan sudah terdaftar BPOM.</li>
+                <li>Pengiriman dari Malang ke seluruh Indonesia, dikemas dengan bubble wrap.</li>
+                <li>Bisa konsultasi jenis kulit lewat WhatsApp sebelum membeli.</li>
+                <li>Garansi tukar produk jika barang rusak atau tumpah saat diterima.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-isi">
+            <p>&copy; 2026 Glowiee Beauty - Toko Online Makeup &amp; Skincare, Malang<br>
+            WhatsApp: 0812-3456-7890 | Email: <a href="mailto:halo@glowiee.id" style="color:white;">halo@glowiee.id</a></p>
+        </div>
+    </footer>
+</body>
+</html>

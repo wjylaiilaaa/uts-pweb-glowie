@@ -1,0 +1,20 @@
+body { margin: 0; }
+.container { margin: 0 auto; padding: 15px 20px; }
+header .logo { margin: 5px 0; }
+nav { margin-top: 12px; }
+nav a { margin-left: 5px; }
+.hero h1 { margin: 20px 0 10px 0; }
+.hero p { margin: 10px 0 20px 0; }
+.hero .tombol { margin-bottom: 20px; }
+h1 { margin: 10px 0; }
+h2 { margin: 15px 0 15px 0; }
+.card { margin: 10px 0.66%; }
+.card h3 { margin: 12px 0 5px 0; }
+.card p { margin: 5px 0 10px 0; }
+.kolom2 { margin-bottom: 15px; }
+.kolom-kanan { margin-left: 4%; }
+.kotak h3 { margin-top: 0; }
+.tombol-area { margin-top: 20px; text-align: center; }
+.tombol-area .tombol { margin: 0 8px; }
+footer { margin-top: 30px; }
+footer p { margin: 10px 0; }

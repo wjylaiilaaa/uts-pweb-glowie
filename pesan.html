@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Sekarang | Glowiee Beauty</title>
+    <link rel="stylesheet" href="margin.css">
+
+    <style>
+        body { font-family: Arial, sans-serif; font-size: 16px; line-height: 24px; color: #333333; background-color: #fff5f7; }
+        a { text-decoration: none; }
+        .container { width: 960px; overflow: auto; box-sizing: border-box; }
+        header { background-color: #d6336c; color: white; overflow: auto; }
+        header .logo { float: left; font-size: 28px; font-weight: bold; letter-spacing: 2px; }
+        header .logo small { display: block; font-size: 12px; font-weight: normal; letter-spacing: 0; }
+        nav { float: right; }
+        nav a { float: left; color: white; font-weight: bold; padding: 10px 18px; border-radius: 4px; }
+        nav a.aktif { background-color: #a61e4d; }
+        .hero { background-color: #ffe0e9; text-align: center; border-bottom: 4px solid #d6336c; }
+        .hero h1 { font-size: 38px; color: #a61e4d; }
+        .hero p { font-size: 18px; }
+        .tombol { display: inline-block; background-color: #d6336c; color: white; font-weight: bold; padding: 10px 24px; border-radius: 20px; border: none; font-size: 16px; cursor: pointer; }
+        h2 { color: #a61e4d; border-bottom: 2px dashed #f06595; padding-bottom: 5px; }
+        h3 { color: #d6336c; }
+        .card { width: 32%; float: left; background-color: white; border: 1px solid #f3b6c9; border-radius: 8px; padding: 15px; position: relative; box-sizing: border-box; }
+        .card .foto { height: 150px; background-color: #ffe0e9; border-radius: 6px; overflow: hidden; }
+        .card .foto img { width: 100%; height: 150px; object-fit: cover; }
+        .card .harga { color: #d6336c; font-weight: bold; font-size: 18px; }
+        .card .label { position: absolute; top: 8px; right: 8px; background-color: #d6336c; color: white; font-size: 12px; padding: 2px 8px; border-radius: 10px; }
+        .kolom2 { width: 48%; float: left; box-sizing: border-box; }
+        .kotak { background-color: white; border: 1px solid #f3b6c9; border-radius: 8px; padding: 15px; }
+        table { width: 100%; border-collapse: collapse; background-color: white; }
+        th { background-color: #d6336c; color: white; }
+        th, td { border: 1px solid #f3b6c9; padding: 8px; text-align: left; }
+        tfoot td { background-color: #ffe0e9; font-style: italic; }
+        caption { font-weight: bold; color: #a61e4d; text-align: left; padding-bottom: 5px; }
+        form label { font-weight: bold; }
+        .isian { box-sizing: border-box; width: 100%; padding: 8px; border: 1px solid #f06595; border-radius: 4px; font-size: 15px; }
+        footer { background-color: #a61e4d; color: white; text-align: center; font-size: 14px; }
+        .clear { clear: both; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-isi">
+            <div class="logo">GLOWIEE<small>Makeup &amp; Skincare Store</small></div>
+            <nav>
+                <a href="index.html">Beranda</a>
+                <a href="produk.html">Produk</a>
+                <a href="tips.html">Tips &amp; Tentang</a>
+                <a href="pesan.html" class="aktif">Pesan Sekarang</a>
+            </nav>
+        </div>
+    </header>
+
+    <div>
+        <div class="container isi">
+            <h1>Form Pemesanan</h1>
+            <p>Isi data dengan lengkap dan benar. Kolom bertanda * wajib diisi.</p>
+        </div>
+    </div>
+
+    <div>
+        <div class="container isi">
+            <form name="formpesan" id="formpesan" method="get" action="terimakasih.html">
+                <div class="kolom2">
+                    <div class="kotak">
+                        <h3>Data Pembeli</h3>
+                        <p><label for="nama">Nama Lengkap *</label><br>
+                        <input class="isian" type="text" id="nama" name="nama" placeholder="Contoh: Siti Aisyah" pattern="[A-Za-z ]{3,40}" title="Hanya huruf dan spasi, 3 sampai 40 karakter" required autofocus></p>
+
+                        <p><label for="email">Email *</label><br>
+                        <input class="isian" type="email" id="email" name="email" placeholder="nama@email.com" required></p>
+
+                        <p><label for="hp">Nomor HP / WhatsApp *</label><br>
+                        <input class="isian" type="tel" id="hp" name="hp" placeholder="08123456789" pattern="08[0-9]{8,11}" title="Diawali 08, total 10 sampai 13 angka" required></p>
+
+                        <p><label for="alamat">Alamat Pengiriman *</label><br>
+                        <textarea class="isian" id="alamat" name="alamat" rows="4" placeholder="Jalan, nomor rumah, kelurahan, kota, kode pos" required></textarea></p>
+                    </div>
+                </div>
+
+                <div class="kolom2 kolom-kanan">
+                    <div class="kotak">
+                        <h3>Data Pesanan</h3>
+                        <p><label for="produk">Produk *</label><br>
+                        <select class="isian" id="produk" name="produk" required>
+                            <option value="">-- Pilih produk --</option>
+                            <optgroup label="Makeup">
+                                <option>Cushion Natural Glow - Rp 99.000</option>
+                                <option>Matte Lip Cream Rose - Rp 59.000</option>
+                                <option>Maskara Waterproof - Rp 49.000</option>
+                                <option>Eyeshadow Palette 9 Warna - Rp 129.000</option>
+                                <option>Blush On Peach - Rp 45.000</option>
+                                <option>Pensil Alis Anti Air - Rp 29.000</option>
+                            </optgroup>
+                            <optgroup label="Skincare">
+                                <option>Facial Wash Gentle - Rp 42.000</option>
+                                <option>Toner Hydrating - Rp 55.000</option>
+                                <option>Serum Vitamin C 15% - Rp 89.000</option>
+                                <option>Moisturizer Ceramide - Rp 68.000</option>
+                                <option>Sunscreen Gel SPF 50 - Rp 75.000</option>
+                                <option>Sheet Mask Aloe (5 pcs) - Rp 35.000</option>
+                            </optgroup>
+                        </select></p>
+
+                        <p><label for="jumlah">Jumlah *</label><br>
+                        <input class="isian" type="number" id="jumlah" name="jumlah" min="1" max="20" value="1" required></p>
+
+                        <p><label for="tanggal">Tanggal Pemesanan</label><br>
+                        <input class="isian" type="date" id="tanggal" name="tanggal"></p>
+
+                        <p><label>Jenis Kulit</label><br>
+                        <input type="radio" name="kulit" value="Berminyak" checked> Berminyak
+                        <input type="radio" name="kulit" value="Kering"> Kering
+                        <input type="radio" name="kulit" value="Kombinasi"> Kombinasi
+                        <input type="radio" name="kulit" value="Sensitif"> Sensitif</p>
+
+                        <p><label>Pembayaran</label><br>
+                        <input type="radio" name="bayar" value="Transfer" checked> Transfer Bank
+                        <input type="radio" name="bayar" value="COD"> COD (Bayar di tempat)</p>
+
+                        <p><input type="checkbox" name="bubble" value="ya"> Tambah bubble wrap ekstra (+Rp 2.000)<br>
+                        <input type="checkbox" name="hadiah" value="ya"> Kemas sebagai kado</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+                <div class="tombol-area">
+                    <input type="submit" value="Kirim Pesanan" class="tombol">
+                    <input type="reset" value="Ulangi" class="tombol">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-isi">
+            <p>&copy; 2026 Glowiee Beauty - Toko Online Makeup &amp; Skincare, Malang<br>
+            WhatsApp: 0812-3456-7890 | Email: <a href="mailto:halo@glowiee.id" style="color:white;">halo@glowiee.id</a></p>
+        </div>
+    </footer>
+</body>
+</html>
